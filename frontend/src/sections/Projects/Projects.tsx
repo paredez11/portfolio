@@ -1,12 +1,13 @@
 // JohnnyPortfolio/frontend/src/sections/Projects/Projects.tsx
 
-import { ProjectCard } from '../../components'
-import { projects } from '../../data/projects'
+import { ProjectCard } from "../../components";
+import { projects } from "../../data/projects";
+import "./Projects.css";
 
 function Projects() {
   return (
     <section id="projects">
-      <h2>Projects</h2>
+      <h2>Selected Work</h2>
 
       <div className="projects__list">
         {projects.map((project) => (
@@ -14,7 +15,7 @@ function Projects() {
         ))}
       </div>
     </section>
-  )
+  );
 }
 
-export default Projects
+export default Projects;

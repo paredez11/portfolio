@@ -1,0 +1,10 @@
+/* JohnnyPortfolio/frontend/src/App.css */
+
+#root {
+  min-height: 100vh;
+}
+
+main {
+  min-height: 100vh;
+  overflow-x: hidden;
+}

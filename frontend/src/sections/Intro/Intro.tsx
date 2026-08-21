@@ -6,12 +6,19 @@ function Intro() {
   return (
     <section className="intro">
       <div className="intro__content">
-        <h1>Johnny Paredez III</h1>
+        <img
+          className="intro__profile"
+          src="/images/prof.png"
+          alt="Johnny Paredez"
+        />
+        <h1>Johnny P. III</h1>
         <p>Software Developer</p>
         <p>I build software that turns uncertainty into confidence.</p>
 
-        <a href="#projects">View My Work</a>
-        <a href="/assets/Paredez - Resume.pdf">Résumé</a>
+        <div className="intro__actions">
+          <a href="#projects">View My Work</a>
+          <a href="/assets/Paredez - Resume.pdf">Résumé</a>
+        </div>
       </div>
 
       <div className="intro__visual">

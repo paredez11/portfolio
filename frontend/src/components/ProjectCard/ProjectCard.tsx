@@ -1,6 +1,7 @@
 // JohnnyPortfolio/frontend/src/components/ProjectCard/ProjectCard.tsx
 
 import type { Project } from "../../types";
+import "./ProjectCard.css";
 
 function ProjectCard({
   title,
@@ -47,13 +48,23 @@ function ProjectCard({
       {(liveUrl || repoUrl) && (
         <div className="project-card__links">
           {liveUrl && (
-            <a href={liveUrl} target="_blank" rel="noreferrer">
+            <a
+              className="project-card__link project-card__link--primary"
+              href={liveUrl}
+              target="_blank"
+              rel="noreferrer"
+            >
               Live Site
             </a>
           )}
 
           {repoUrl && (
-            <a href={repoUrl} target="_blank" rel="noreferrer">
+            <a
+              className="project-card__link project-card__link--secondary"
+              href={repoUrl}
+              target="_blank"
+              rel="noreferrer"
+            >
               GitHub
             </a>
           )}

@@ -1,11 +1,92 @@
 /* JohnnyPortfolio/frontend/src/sections/Intro/Intro.css */
 
 .intro {
-  min-height: 100vh;
   display: grid;
-  grid-template-columns: 3fr 2fr;
+  grid-template-columns: auto auto;
   align-items: center;
-  padding: 4rem;
+  justify-content: center;
+  gap: 5rem;
+
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 3rem 4rem;
+}
+
+.intro__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.intro__profile {
+  width: 6.5rem;
+  height: 8rem;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: 9rem;
+}
+
+.intro__content h1 {
+  font-size: clamp(2.25rem, 5vw, 4rem);
+  line-height: 1;
+  font-weight: 700;
+}
+
+.intro__content p:first-of-type {
+  color: var(--color-gray);
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+.intro__content p:last-of-type {
+  max-width: 36rem;
+  font-size: clamp(1.125rem, 2vw, 1.5rem);
+  line-height: 1.5;
+}
+
+.intro__actions {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.intro__actions a:first-child {
+  min-height: 1.75rem;
+  padding: 0.3rem 1.125rem;
+
+  background: var(--color-pink);
+  color: var(--color-black);
+
+  border: 1px solid transparent;
+  border-radius: 9999px;
+
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.intro__actions a:last-child {
+  min-height: 1.75rem;
+  padding: 0.3rem 1.125rem;
+
+  color: var(--color-white);
+  border: 1px solid rgba(244, 246, 250, 0.35);
+  border-radius: 9999px;
+
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.intro__actions a:hover,
+.intro__actions a:focus-visible {
+  color: var(--color-pink);
+}
+
+.intro__actions a:first-child:hover,
+.intro__actions a:first-child:focus-visible {
+  background: var(--color-white);
+  color: var(--color-black);
 }
 
 .intro__visual {

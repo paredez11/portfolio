@@ -1,0 +1,20 @@
+/* JohnnyPortfolio/frontend/src/sections/Intro/Intro.css */
+
+.intro {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  align-items: center;
+  padding: 4rem;
+}
+
+.intro__visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro__visual img {
+  width: 100%;
+  max-width: 450px;
+}

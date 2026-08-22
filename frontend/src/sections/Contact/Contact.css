@@ -1,0 +1,97 @@
+/* frontend/src/sections/Contact/Contact.css */
+
+.contact {
+  padding: 4rem 1.5rem;
+}
+
+.contact__content {
+  width: min(100%, 72rem);
+  margin: 0 auto;
+}
+
+.contact__wordmark {
+  display: none;
+}
+
+.contact__wordmark img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.contact__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contact__info h2 {
+  margin: 0 0 2rem;
+  color: #f4f6fa;
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1;
+}
+
+.contact__info h2::after {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 0.1875rem;
+  margin-top: 0.75rem;
+  border-radius: 9999px;
+  background: #ff2d95;
+}
+
+.contact__links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.contact__links a {
+  color: #98a2b3;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-decoration: none;
+  transition: color 150ms ease;
+}
+
+.contact__links a:hover,
+.contact__links a:focus-visible {
+  color: #ff2d95;
+}
+
+@media (min-width: 48rem) {
+  .contact {
+    padding: 3rem 2rem 4rem;
+  }
+
+  .contact__content {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(18rem, auto);
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  .contact__wordmark {
+    display: block;
+    width: min(100%, 45rem);
+    justify-self: start;
+    transform: translateY(-1rem);
+  }
+
+  .contact__info {
+    align-items: flex-end;
+    text-align: right;
+    justify-self: end;
+  }
+
+  .contact__links {
+    align-items: flex-end;
+  }
+
+  .contact__links a {
+    font-size: 1.0625rem;
+  }
+}

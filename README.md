@@ -23,7 +23,7 @@ Personal portfolio built with React, TypeScript, and Vite.
 
 ### Official Colors
 - #071A3D 
-- #800020
+- #42000E
 - #FF2D95
 - #090B10
 - #111827
@@ -31,3 +31,4 @@ Personal portfolio built with React, TypeScript, and Vite.
 - #98A2B3
 
 ### Live Site:
+jparedez.dev

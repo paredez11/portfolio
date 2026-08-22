@@ -13,15 +13,22 @@ export const projects: Project[] = [
     technologies: [
       "React",
       "Redux",
+      "React Router",
+      "Vite",
       "Python",
       "FastAPI",
-      "Alembic",
+      "SQLAlchemy",
+      "Pydantic",
       "PostgreSQL",
+      "JWT",
+      "bcrypt",
+      "Cloudinary",
     ],
     outcome:
       "Surface Clean now has a purpose-built platform that supports its business while making equipment selection simpler and more approachable for its customers.",
     liveUrl: "https://surfacecleanmachines.com",
     repoUrl: "https://github.com/paredez11/surfaceClean",
+    logo: "/images/SCLogo.png",
   },
 
   {
@@ -38,12 +45,11 @@ export const projects: Project[] = [
       "FastAPI",
       "Auth0",
       "Tailwind CSS",
-      "Vercel",
-      "Render",
     ],
     outcome:
       "FinSight was deployed as a working full-stack application where users can track portfolios, view market information, and interact with portfolio-aware AI features in one interface.",
     liveUrl: "https://fin-sight-a-five.vercel.app/",
     repoUrl: "https://github.com/Coding-Temple-Tech-Residency/FinSight-A",
+    logo: "/images/FinSightLogo.png",
   },
 ];

@@ -42,7 +42,7 @@
 
 @media (min-width: 1280px) {
   #projects {
-    padding-block: 6rem 7rem;
+    padding-block: 4rem;
   }
 
   .projects__list {

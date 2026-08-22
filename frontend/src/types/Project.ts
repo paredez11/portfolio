@@ -9,4 +9,5 @@ export type Project = {
   outcome: string
   liveUrl?: string
   repoUrl?: string
+  logo?: string
 }

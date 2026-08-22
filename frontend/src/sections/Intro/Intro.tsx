@@ -13,7 +13,7 @@ function Intro() {
         />
         <h1>Johnny P. III</h1>
         <p>Software Developer</p>
-        <p>I build software that turns uncertainty into confidence.</p>
+        <p>Software designed to turn uncertainty into confidence.</p>
 
         <div className="intro__actions">
           <a href="#projects">View My Work</a>

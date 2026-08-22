@@ -12,10 +12,39 @@ function ProjectCard({
   outcome,
   liveUrl,
   repoUrl,
+  logo,
 }: Project) {
   return (
     <article className="project-card">
-      <h3>{title}</h3>
+      <div className="project-card__heading">
+        {logo && liveUrl && (
+          <a
+            href={liveUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="project-card__logo-link"
+          >
+            <img
+              src={logo}
+              alt={`${title} logo`}
+              className="project-card__logo"
+            />
+          </a>
+        )}
+
+        {liveUrl ? (
+          <a
+            href={liveUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="project-card__title-link"
+          >
+            <h3>{title}</h3>
+          </a>
+        ) : (
+          <h3>{title}</h3>
+        )}
+      </div>
 
       <div className="project-card__details">
         <div>
